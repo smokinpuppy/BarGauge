@@ -55,6 +55,7 @@ ph(colorScale).png and bar_graph(gradient).png)
   thouSeparator: ',', 		// Default Thousands seperator I.E. 1,000 or 1.000
 
   decSeparator: '.' 		// Default Decimal Separator I.E. 0.001 or 0,001
+  
   toolTip: ''				// If set, this will use jQuery Tooltip
 
 });

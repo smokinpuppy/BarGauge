@@ -4,7 +4,7 @@
   },
   "title": "jQuery BarGauge",
   "name": "BarGauge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": [
   	"demo.html",
     "js/jquery.BarGauge.js",

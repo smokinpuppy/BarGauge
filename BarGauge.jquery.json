@@ -2,9 +2,9 @@
   "author": {
 	  "name":"Robert Haddad (SmokinPuppy)"
   },
-  "title": "BarGauge",
-  "name": "BarGauge.jquery.json",
-  "version": "0.0.1",
+  "title": "jQuery BarGauge",
+  "name": "BarGauge",
+  "version": "1.0.0",
   "main": [
   	"demo.html",
     "js/jquery.BarGauge.js",

@@ -23,6 +23,11 @@
 	"css/BarGauge/bar_graph-gradient.png"
   ],
   "description": "Small jQuery Plugin to display a Progress / Bar Gauge",
+  "repository": {
+        "type": "git",
+        "url": "git://github.com/smokinpuppy/BarGauge.git"
+   },
+  "download": "https://github.com/smokinpuppy/BarGauge/archive/master.zip",
   "licenses": [
     {
       "type": "MIT",

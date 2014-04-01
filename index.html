@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="BarGauge : Small jQuery Plugin to display a Progress / Bar Gauge" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>BarGauge</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/smokinpuppy/BarGauge">View on GitHub</a>
+
+          <h1 id="project_title">BarGauge</h1>
+          <h2 id="project_tagline">Small jQuery Plugin to display a Progress / Bar Gauge</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/smokinpuppy/BarGauge/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/smokinpuppy/BarGauge/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-bargauge" class="anchor" href="#welcome-to-bargauge"><span class="octicon octicon-link"></span></a>Welcome to BarGauge.</h3>
+
+<p>This is a small jQuery Plugin to display a Progress Bar or Bar Gauge. It fairly easy to use.</p>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h3>
+
+<p>Include in Head Tag:</p>
+
+<pre><code>&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="js/jquery.BarGauge.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>JavaScript / jQuery:</p>
+
+<pre><code>$('#demo1').BarGauge({
+
+  color: "#00C",           // Color of the Progress / Gauge Bar 
+
+  backgroundColor: "#FFF",     // Background color of Progress / Gauge Bar
+
+  width: "754px",      // Default width of Bar (Original Graphic Size of faceplate)
+
+  height: "72px",      // Default height of Bar
+
+  value: 0.01,             // Value of Bar Gauge (Current Position)
+
+  goal: 1.00,          // Goal of Bar Gauge (Maximum Position)
+
+  title: "BarGauge",       // Default Title of Bar Gauge
+
+  showTitle: true,         // If True show title
+
+  value_before: "",        // Default Value before text I.E. $1,000
+
+  value_after: "",         // Default Value Text end text I.E 1,000 USD
+
+  showValue: true,         // If True Show the value field in the Gauge Bar
+
+  valueColor: '#3cff00',       // Default Value Color 
+
+  faceplate: "url(css/BarGauge/bar_graph.png) no-repeat", // Default locaiton of faceplate graphic other options (bar_gra
+ph(colorScale).png and bar_graph(gradient).png)
+  animSpeed: 400,      // Animation Speed can be string "slow","fast",etc... Or Integer
+
+  animType: "swing",       // Animation Type (jQuery Animation Methods)
+
+  decPlaces: 2,            // Default decimal places on the text field when showing value
+
+  thouSeparator: ',',      // Default Thousands seperator I.E. 1,000 or 1.000
+
+  decSeparator: '.'        // Default Decimal Separator I.E. 0.001 or 0,001
+
+});
+</code></pre>
+
+<p>HTML:</p>
+
+<pre><code>&lt;div id="demo1" class="barGauge_container"&gt;&lt;/div&gt;
+</code></pre>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>This Plugin was created by Robert Haddad (SmokinPuppy)in 2014.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with this plugin? Check out the documentation at <a href="https://github.com/smokinpuppy/BarGauge">https://github.com/smokinpuppy/BarGauge</a> or contact <a href="mailto:rha2180@yahoo.com">rha2180@yahoo.com</a> and I’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">BarGauge maintained by <a href="https://github.com/smokinpuppy">smokinpuppy</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

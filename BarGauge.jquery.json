@@ -4,7 +4,15 @@
   },
   "title": "jQuery BarGauge",
   "name": "BarGauge",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "keywords": [
+        "progress",
+        "bar",
+        "graph",
+        "gauge",
+        "animated",
+        "ui"
+    ],
   "main": [
   	"demo.html",
     "js/jquery.BarGauge.js",

@@ -44,7 +44,8 @@ Number.prototype.formatMoney = function(decPlaces, thouSeparator, decSeparator) 
 			animType: "swing",			// Animation Type
 			decPlaces: 2,				// Default decimal places on the text field
 			thouSeparator: ',', 		// Default Thousands seperator I.E. 1,000 or 1.000
-			decSeparator: '.'			// Default Decimal Separator I.E. 0.001 or 0,001
+			decSeparator: '.',			// Default Decimal Separator I.E. 0.001 or 0,001
+			toolTip: ''					// If set, this will use jQuery Tooltip
         }, options );
 		
 		var mainDivId = this.uniqueId(); // Generate Unique ID for container div
@@ -58,6 +59,12 @@ Number.prototype.formatMoney = function(decPlaces, thouSeparator, decSeparator) 
    			'<div id="' + mainDivId + '_text" class="barGauge_text"></div>' +
     		'<div id="' + mainDivId + '_forground" class="barGauge_forground"></div>' +
         	useTitle);
+			
+		// Initiate Tool Tip
+		if(settings.toolTip !== ''){
+			$(mainDivId.selector).attr('title',settings.toolTip);
+			$(mainDivId.selector).tooltip();
+		}
  		
 		// Generate CSS from options
         this.css({ 

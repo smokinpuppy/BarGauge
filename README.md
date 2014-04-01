@@ -9,9 +9,9 @@ Usage:
 
 Include in Head Tag:
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/jquery.BarGauge.js"></script>
+&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/jquery.BarGauge.js"&gt;&lt;/script&gt;
 
 
 JavaScript / jQuery:
@@ -40,4 +40,4 @@ $('#demo1').BarGauge({
 
 HTML:
 
-<div id="demo1" class="barGauge_container" ></div> 
+&lt;div id="demo1" class="barGauge_container" &gt;&lt;/div&gt; 

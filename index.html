@@ -9,6 +9,53 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>BarGauge</title>
+    <link rel="stylesheet" href="stylesheets/BarGauge/jquery.BarGauge.css" type="text/css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.BarGauge.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(e) {
+    	$('#demo1').BarGauge({
+			value: 51000,
+			goal: 100000,
+			decPlaces: 2,
+			title: "Gizmo Orders",
+			showTitle: true,
+			value_before: "$",
+			showValue: true,
+			animSpeed: 'slow',
+			animType: 'linear'
+		});	
+		$('#demo2').BarGauge({
+			value: 14,
+			goal: 100,
+			decPlaces: 2,
+			color: '#989898',
+			title: "Target Upload",
+			showTitle: false,
+			value_before: "Uploading Files",
+			showValue: true,
+			valueColor: '#909090',
+			animSpeed: 1000,
+			animType: 'swing',
+			faceplate: "url(stylesheets/BarGauge/bar_graph-colorScale.png) no-repeat",
+		});
+		$('#demo3').BarGauge({
+			color: 'red',
+			backgroundColor: 'green',
+			valueColor: '#000',
+			value: 2,
+			goal: 10,
+			decPlaces: 0,
+			title: "Company Growth",
+			showTitle: true,
+			value_after: "%",
+			showValue: true,
+			animSpeed: 'fast',
+			faceplate: "url(stylesheets/BarGauge/bar_graph-gradient.png) no-repeat"
+		});
+	});
+	</script>
   </head>
 
   <body>
@@ -31,11 +78,20 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
+      
+      <h3>
 <a name="welcome-to-bargauge" class="anchor" href="#welcome-to-bargauge"><span class="octicon octicon-link"></span></a>Welcome to BarGauge.</h3>
 
 <p>This is a small jQuery Plugin to display a Progress Bar or Bar Gauge. It fairly easy to use.</p>
 
+      	<h3>Example:</h3>
+        <h4>Demo 1</h4>
+		<div id="demo1" class="barGauge_container"></div>
+		<h4>Demo 2</h4>
+		<div id="demo2" class="barGauge_container"></div>
+		<h4>Demo 3</h4>
+		<div id="demo3" class="barGauge_container"></div>
+        
 <h3>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h3>
 
@@ -45,7 +101,7 @@
 
 &lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"&gt;&lt;/script&gt;
 
-&lt;script type="text/javascript" src="js/jquery.BarGauge.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="javascripts/jquery.BarGauge.js"&gt;&lt;/script&gt;
 </code></pre>
 
 <p>JavaScript / jQuery:</p>
@@ -76,7 +132,7 @@
 
   valueColor: '#3cff00',       // Default Value Color 
 
-  faceplate: "url(css/BarGauge/bar_graph.png) no-repeat", // Default locaiton of faceplate graphic other options (bar_gra
+  faceplate: "url(stylesheets/BarGauge/bar_graph.png) no-repeat", // Default locaiton of faceplate graphic other options (bar_gra
 ph(colorScale).png and bar_graph(gradient).png)
   animSpeed: 400,      // Animation Speed can be string "slow","fast",etc... Or Integer
 

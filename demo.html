@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bar Gauge Demo</title>
+<link rel="stylesheet" href="css/BarGauge/jquery.BarGauge.css" type="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.BarGauge.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $('#demo1').BarGauge({
+		value: 51000,
+		goal: 100000,
+		decPlaces: 2,
+		title: "Gizmo Orders",
+		showTitle: true,
+		value_before: "$",
+		showValue: true,
+		animSpeed: 'slow',
+		animType: 'linear'
+	});
+	$('#demo2').BarGauge({
+		value: 14,
+		goal: 100,
+		decPlaces: 2,
+		color: '#989898',
+		title: "Target Upload",
+		showTitle: false,
+		value_before: "Uploading Files",
+		showValue: true,
+		valueColor: '#909090',
+		animSpeed: 1000,
+		animType: 'swing',
+		faceplate: "url(css/BarGauge/bar_graph-colorScale.png) no-repeat",
+	});
+	$('#demo3').BarGauge({
+		color: 'red',
+		backgroundColor: 'green',
+		valueColor: '#000',
+		value: 2,
+		goal: 10,
+		decPlaces: 0,
+		title: "Company Growth",
+		showTitle: true,
+		value_after: "%",
+		showValue: true,
+		animSpeed: 'fast',
+		faceplate: "url(css/BarGauge/bar_graph-gradient.png) no-repeat"
+	});
+});
+</script>
+</head>
+
+<body>
+<h2>Demo 1</h2>
+<div id="demo1" class="barGauge_container"></div>
+<h2>Demo 2</h2>
+<div id="demo2" class="barGauge_container"></div>
+<h2>Demo 3</h2>
+<div id="demo3" class="barGauge_container"></div>
+
+<h2>Usage:</h2>
+<code>
+	<h3>Include in Head Tag</h3>
+    &lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;<br />
+	 &lt;script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js">&lt;/script&gt;<br />
+	 &lt;script type="text/javascript" src="js/jquery.BarGauge.js">&lt;/script&gt;<br />
+	<h3>JavaScript / jQuery</h3>
+  $('#demo1').BarGauge({<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;color: "#00C",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Color of the Progress / Gauge Bar <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;backgroundColor: "#FFF",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Background color of Progress / Gauge Bar<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;width: "754px",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Default width of Bar (Original Graphic Size of faceplate)<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;height: "72px",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Default height of Bar<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;value: 0.01,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Value of Bar Gauge (Current Position)<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;goal: 1.00,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Goal of Bar Gauge (Maximum Position)<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;title: "BarGauge",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Default Title of Bar Gauge<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;showTitle: true,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// If True show title<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;value_before: "",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Default Value before text I.E. $1,000<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;value_after: "",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Default Value Text end text I.E 1,000 USD<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;showValue: true,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// If True Show the value field in the Gauge Bar<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;valueColor: '#3cff00',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Default Value Color <br />
+&nbsp;&nbsp;&nbsp;&nbsp;faceplate: "url(css/BarGauge/bar_graph.png) no-repeat", // Default locaiton of faceplate graphic other options (bar_graph(colorScale).png and bar_graph(gradient).png)<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;animSpeed: 400,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Animation Speed can be string &quot;slow&quot;,&quot;fast&quot;,etc... Or Integer<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;animType: "swing",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Animation Type (jQuery Animation Methods)<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;decPlaces: 2,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Default decimal places on the text field when showing value<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;thouSeparator: ',',&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Default Thousands seperator I.E. 1,000 or 1.000<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;decSeparator: '.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Default Decimal Separator I.E. 0.001 or 0,001<br />
+  });
+  	<h3>HTML</h3>
+    &lt;div id="demo1" <stong><font color="red">class="barGauge_container"</font></stong>
+&gt;&lt;/div&gt; </code>
+</body>
+</html>

@@ -1,6 +1,7 @@
 {
   "author": {
-	  "name":"Robert Haddad (SmokinPuppy)"
+	  "name":"Robert Haddad (SmokinPuppy)",
+	  "email": "rha2180@yahoo.com"
   },
   "title": "jQuery BarGauge",
   "name": "BarGauge",

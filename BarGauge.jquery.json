@@ -1,5 +1,9 @@
 {
-  "name": "smokinpuppy/jquery.BarGauge.js",
+  "author": {
+	  "name":"Robert Haddad (SmokinPuppy)"
+  },
+  "title": "BarGauge",
+  "name": "BarGauge.jquery.json",
   "version": "0.0.1",
   "main": [
   	"demo.html",
@@ -10,7 +14,12 @@
 	"css/BarGauge/bar_graph-gradient.png"
   ],
   "description": "Small jQuery Plugin to display a Progress / Bar Gauge",
-  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "ignore": [
   ],
   "dependencies": {

@@ -1,0 +1,22 @@
+{
+  "name": "smokinpuppy/jquery.BarGauge.js",
+  "version": "0.0.1",
+  "main": [
+  	"demo.html",
+    "js/jquery.BarGauge.js",
+    "css/BarGauge/jquery.BarGauge.css",
+    "css/BarGauge/bar_graph.png",
+	"css/BarGauge/bar_graph-colorScale.png",
+	"css/BarGauge/bar_graph-gradient.png"
+  ],
+  "description": "Small jQuery Plugin to display a Progress / Bar Gauge",
+  "license": "MIT",
+  "ignore": [
+  ],
+  "dependencies": {
+	  "jquery": ">=2.0",
+	  "jquery-ui": ">=1.9.2"
+  },
+  "devDependencies": {
+  }
+}

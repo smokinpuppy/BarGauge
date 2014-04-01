@@ -27,6 +27,7 @@
         "type": "git",
         "url": "git://github.com/smokinpuppy/BarGauge.git"
    },
+  "homepage": "http://smokinpuppy.github.io/BarGauge/",
   "download": "https://github.com/smokinpuppy/BarGauge/archive/master.zip",
   "licenses": [
     {
